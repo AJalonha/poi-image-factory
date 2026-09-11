@@ -1,0 +1,32 @@
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f1ea; color: #20221f; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 80px; }
+.eyebrow { color: #9b4b2b; font-size: 12px; font-weight: 800; letter-spacing: .14em; }
+h1 { max-width: 700px; margin: 10px 0 14px; font-size: clamp(36px, 6vw, 70px); line-height: .98; letter-spacing: -.055em; }
+.lede { max-width: 680px; color: #64645d; font-size: 18px; line-height: 1.55; }
+.card, .result, .status { background: #fffdf8; border: 1px solid #ddd8ce; border-radius: 20px; box-shadow: 0 10px 30px rgba(44, 38, 27, .06); }
+.card { margin-top: 36px; padding: 24px; }
+label { display: block; font-weight: 750; margin-bottom: 10px; }
+input { width: 100%; padding: 14px; border: 1px dashed #a7a093; border-radius: 12px; background: #faf8f2; }
+.hint, .template, .result p { color: #6b6a64; font-size: 14px; line-height: 1.45; }
+code { color: #914829; }
+button { margin-top: 14px; border: 0; border-radius: 999px; padding: 13px 20px; background: #9b4b2b; color: white; font-weight: 800; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+.template { display: inline-block; margin-top: 16px; color: #9b4b2b; }
+.status { margin-top: 24px; padding: 18px 20px; }
+.status a, .source a { color: #9b4b2b; font-weight: 750; }
+.results { display: grid; gap: 20px; margin-top: 24px; }
+.result { padding: 20px; }
+.result-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+h2 { margin: 0; font-size: 21px; }
+.result-head p { margin: 6px 0 0; }
+.badge { border-radius: 999px; background: #eee5d6; color: #754327; padding: 7px 10px; font-size: 12px; font-weight: 800; text-transform: capitalize; white-space: nowrap; }
+.images { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; aspect-ratio: 2 / 1; object-fit: cover; border-radius: 12px; background: #e9e4da; }
+figcaption { margin-top: 7px; color: #77736b; font-size: 12px; }
+.reason { margin: 16px 0 0; }
+.source { margin: 8px 0 0; }
+.error { border-color: #d98a7b; }
+@media (max-width: 650px) { .shell { padding-top: 32px; } .images { grid-template-columns: 1fr; } .result-head { display: block; } .badge { display: inline-block; margin-top: 10px; } }
